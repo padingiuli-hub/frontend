@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "5cb04510bb89301c",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a3a2fce4d6d9030",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4744a81cf4e705b8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "10fd43796cd98eab",
+    "type": "split",
+    "children": [
+      {
+        "id": "829db053bc671513",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2673e965916b517",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "8215ecf6b12e9582",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "cc07f5145a39e95a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "7e62a3fea75be4ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c9f5f47b969f84e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0686b56c5c7a87e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "FRONTEND/Modulo 2/Node.js.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "56d8c742e53f66a3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "FRONTEND/Modulo 2/Node.js.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "cdd957bfb91a95bc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "13edae44a4fd32fb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "9ee97c8b1b155d6c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "FRONTEND/Modulo 2/Node.js.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          },
+          {
+            "id": "8cb5961dcbaca189",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "c41830fc6fd648a6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "4744a81cf4e705b8",
+  "lastOpenFiles": [
+    "2026-08-31.md",
+    "Sin título.canvas",
+    "Sin título.base",
+    "FRONTEND/Modulo 4/Seguridad en apps web.md",
+    "FRONTEND/Modulo 2/React.md",
+    "FRONTEND/Modulo 3/Next.js.md",
+    "FRONTEND/Modulo 2/Node.js.md",
+    "FRONTEND/Modulo 4",
+    "FRONTEND/Modulo 3",
+    "FRONTEND/Modulo 1/Vite.md",
+    "FRONTEND/Modulo 1/Typescript.md",
+    "FRONTEND/Modulo 1/Javascript.md",
+    "Bienvenido.md",
+    "FRONTEND/Modulo 2",
+    "FRONTEND/Modulo 1",
+    "FRONTEND"
+  ]
+}
