@@ -85,3 +85,139 @@ function Contador() {
 
 ```
 
+## Eventos en React
+
+Los eventos son acciones que pasan al hacer click. Se escriben en camel case y no vez de escribir la funcion entre comillas y con parentesis `"handleClick()"` se pasa entre {}.
+
+```java
+const handleClick = () => {
+	alert('Hiciste click!');
+}
+
+function App() {
+	return <button onClick={handleClick}>Click me</button>
+}
+```
+
+#### preventDefault
+
+Algunos eventos tienen un comportamiento por defecto del navegador. Por ejemplo cuando envias un formulario `(submit)`, el navegador recarga la pagina automaticamente. 
+`event.preventDefault()` evita que se recargue la pagina. 
+
+```
+function handleSubmit(event) {
+	event.preventDefault();
+	alert('Formulario enviado!');
+}
+
+function App() {
+	return (
+		<form onSubmit={handleSubmit}>
+			<button type="submit">Submit</button>
+		</form>
+	);
+}
+```
+
+### Renderizado condicional
+
+##### 1. Operador ternario (condicion ? A : B)
+Significa, si se cumple esto, mostrame A, si no, mostrame B
+
+```java
+const Greeting = ({isLoggedIn}) => {
+	return (
+		<div>
+			{isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please sign up.</h1>}
+		</div>
+	);
+}
+```
+
+##### 2. Operador && (mostrar algo SOLO si se cumple)
+##### 3. Operador if-else
+##### 4. Guard clauses (primero no se cumple, despues caso principal)
+##### 5. Ternario anidado (se juntan dos ternarios uno dentro del otro)
+
+## Hooks
+
+Son funciones que te dejan usar los estados, ciclos de vida y contexto en componentes funcionales. Siempre empiezan con la palabra `use: useState, useEffect, useContext`, etc
+
+- Regla 1: solo arriba del todo, nunca dentro de un if o un loop.
+- Regla 2: solo se usan adentro de componentes de React.  
+
+##### `useState` - guardar un dato que cambia
+
+```java
+import React, {useState} from 'react';
+
+function Counter() {
+	const [count, setCount] = useState(0);
+	
+	return (
+		<div>
+			<p> Clickeaste {count} veces </p>
+			<button onClick={() => setCount(count + 1)}>Click me</button>
+		</div>
+	);
+}
+```
+
+- `useState(0)` crea un dato que arranca en 0.
+- te devuelve 2 cosas dentro de un array: `count` (el valor actual) y `setCount` la funcion para cambiarlo.
+- cuando llamas `setCount(algo)`, React actualiza el valor y vuelve a renderizar el componente mostrando el numero nuevo. 
+
+##### `useContext` - compartir datos sin pasar props a mano
+
+```java
+const ThemeContext = React.createContext('light'); //creas el contexto, valor por defecto "light"
+
+function ThemeButton() {
+	const theme = useContext(ThemeContext); //lo lees directo, sin que nadie te lo pase por prop
+	return <button>Estoy usando el tema: {theme}</button>
+}
+```
+
+##### `useEffect` - hacer algo cuando el componente se monta / se actualiza / se desmonta
+
+Sirve para decir: despues de que se dibuje esto en pantalla, hace algo extra.
+Ese algo extra suele ser cosas que no son parte del dibujo en si, pedir datos a una API, prender un timer, escuchar eventos del teclado, etc
+
+```java
+useEffect(() => {
+	document.title = `Clickeaste ${count} veces`;
+}, [count]);
+```
+
+Cada vez que `count` cambie, ejecuta esta funcion (que cambia el titulo de la pestania)
+
+Tiene dos partes:
+- La funcion, el que hacer (cambiar el titulo).
+- El array `[count]` (segundo argumento), el cuando hacerlo. Le dice, solo ejecutate si el `count` cambio. 
+
+Variantes del array:
+- `useEffect(() => {...}, []` -> Array vacio = "ejecutate 1 sola vez, apenas aparece el componente en la pantalla"
+- `useEffect(() => {...}, [count])` -> "ejecutate cada vez que `count` cambie"
+- `useEffect(() => {...})` -> sin array = "ejecutate despues de CADA render" (casi no se usa)
+#### Hooks Personalizados 
+
+Si tienes una logica que se repite en varios componentes, la puedes empaquetar en tu propia funcion que empiece con `use`
+
+
+```java
+const useFetch = (url) => {
+	const [data, setData] = useState(null);
+	const [loading, setLoading] = useState(true);
+	
+	useEffect(() => {
+	fetch(url)
+		.then (res => res.json())
+		.then (result => {
+			setData(result);
+			setLoading(false);
+		});
+	}, [url]);
+	
+	return { data, loading }; //devuelves el componente que necesita
+}
+```

@@ -11,10 +11,14 @@
             "id": "4744a81cf4e705b8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "FRONTEND/Modulo 2/React.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "React"
             }
           }
         ]
@@ -79,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7e62a3fea75be4ce",
@@ -191,7 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,13 +212,13 @@
   },
   "active": "4744a81cf4e705b8",
   "lastOpenFiles": [
+    "FRONTEND/Modulo 2/Node.js.md",
     "2026-08-31.md",
     "Sin título.canvas",
     "Sin título.base",
     "FRONTEND/Modulo 4/Seguridad en apps web.md",
     "FRONTEND/Modulo 2/React.md",
     "FRONTEND/Modulo 3/Next.js.md",
-    "FRONTEND/Modulo 2/Node.js.md",
     "FRONTEND/Modulo 4",
     "FRONTEND/Modulo 3",
     "FRONTEND/Modulo 1/Vite.md",
