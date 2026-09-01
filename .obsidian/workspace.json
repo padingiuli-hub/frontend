@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FRONTEND/Modulo 2/React.md",
+                "file": "FRONTEND/Modulo 3/Next.js.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "React"
+              "title": "Next.js"
             }
           }
         ]
@@ -200,10 +200,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo lienzo": false,
       "daily-notes:Abrir la nota de hoy": false,
+      "switcher:Abrir selector rápido": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
@@ -212,18 +212,18 @@
   },
   "active": "4744a81cf4e705b8",
   "lastOpenFiles": [
+    "FRONTEND/Modulo 2/React.md",
     "FRONTEND/Modulo 2/Node.js.md",
+    "FRONTEND/Modulo 1/Vite.md",
+    "FRONTEND/Modulo 1/Typescript.md",
+    "FRONTEND/Modulo 1/Javascript.md",
+    "FRONTEND/Modulo 3/Next.js.md",
     "2026-08-31.md",
     "Sin título.canvas",
     "Sin título.base",
     "FRONTEND/Modulo 4/Seguridad en apps web.md",
-    "FRONTEND/Modulo 2/React.md",
-    "FRONTEND/Modulo 3/Next.js.md",
     "FRONTEND/Modulo 4",
     "FRONTEND/Modulo 3",
-    "FRONTEND/Modulo 1/Vite.md",
-    "FRONTEND/Modulo 1/Typescript.md",
-    "FRONTEND/Modulo 1/Javascript.md",
     "Bienvenido.md",
     "FRONTEND/Modulo 2",
     "FRONTEND/Modulo 1",
